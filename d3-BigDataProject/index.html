@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <center>
+                  <a class="navbar-brand" href="#"> Ejericicios big data
+                       
+
+                    </a>
+                    </center>
+                  
+                    
+                </div>
+              
+
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                
+
+                    <li class="active-link"> <a href="index.html" >Ejercicio 1 <span class="badge"></span></a></li>
+                    <li> <a href="E2.html">Ejercicio 2 <span class="badge"></span></a></li>
+                    <li> <a href="E3.html">Ejercicio 3<span class="badge"></span></a></li>
+                    <li> <a href="E4.html">Ejercicio 4</a> </li>
+                    <li> <a href="E5.html">Ejercicio 5</a></li>
+                    <li>  <a href="E6.html">Ejercicio 6 </a></li>
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+           <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>Big Data Project</h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+                  <hr />
+                <div class="row">
+                    <div class="col-lg-12 ">
+                     
+
+
+
+
+       <h4>Count the number of occurrences for the words,Trump,MAGA, Dictator, Impeach, Drain, Swamp, Change</h4>
+    
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        
+       
+        </section>
+
+      
+
+      </div><!-- /.content-wrapper -->
+
+
+
+    <meta charset="utf-8">
+    <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="js/nv.d3.min.js"></script>
+
+ <style>
+        text {
+            font: 12px sans-serif;
+        }
+        svg {
+            display: block;
+        }
+        html, body, #chart1, svg {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+
+<div id="chart1" style="height:500px;">
+
+    
+    <svg></svg>
+</div>
+
+<script>
+    historicalBarChart = [
+        {
+            key: "Cumulative Return",
+            values: [
+                {
+                    "label" : "CHANGE" ,
+                    "value" : 784
+                } ,
+                {
+                    "label" : "DICTATOR" ,
+                    "value" : 863
+                } ,
+                {
+                    "label" : "DRAIN" ,
+                    "value" : 377
+                } ,
+                {
+                    "label" : "IMPEACH" ,
+                    "value" : 2941
+                } ,
+                {
+                    "label" : "MAGA" ,
+                    "value" : 2456
+                } ,
+                {
+                    "label" : "SWAMP" ,
+                    "value" : 428
+                } ,
+                {
+                    "label" : "TRUMP" ,
+                    "value" : 121742
+                } 
+                
+            ]
+        }
+    ];
+    nv.addGraph(function() {
+        var chart = nv.models.discreteBarChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .staggerLabels(true)
+            //.staggerLabels(historicalBarChart[0].values.length > 8)
+            .height(500)
+            .showValues(true)
+            .duration(250)
+            ;
+        d3.select('#chart1 svg')
+            .datum(historicalBarChart)
+            .call(chart);
+        nv.utils.windowResize(chart.update);
+        return chart;
+    });
+</script>
+   
+</body>
+</html>

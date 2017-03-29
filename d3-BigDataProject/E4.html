@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <center>
+                  <a class="navbar-brand" href="#"> Ejericicios big data
+                       
+
+                    </a>
+                    </center>
+                  
+                    
+                </div>
+              
+
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                
+
+                    <li > <a href="index.html" >Ejercicio 1 <span class="badge"></span></a></li>
+                    <li> <a href="E2.html">Ejercicio 2 <span class="badge"></span></a></li>
+                    <li> <a href="E3.html">Ejercicio 3<span class="badge"></span></a></li>
+                    <li class="active-link"> <a href="E4.html">Ejercicio 4</a> </li>
+                    <li> <a href="E5.html">Ejercicio 5</a></li>
+                    <li>  <a href="E6.html">Ejercicio 6 </a></li>
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+           <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>Big Data Project</h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+                  <hr />
+                <div class="row">
+                    <div class="col-lg-12 ">
+                     
+
+
+
+
+       <h4>Find all the retweets for each message.</h4>
+        <h5>Parte de información de output, se tomó los 20 datos para prueba, de acuerdo a los id del tweet y los retweet.
+        para graficar se contó los retweet. Parte del output es: </h5>
+       <textarea rows="10" cols="100">
+           
+63694022492946432   833170144532787200 
+85696171095506944   833374990141685761 
+107091854092279808  833451771041296384 833541420103380993 
+155014799909064704  833329439966580736 833125798135607296 833083330816012292 833086396827045896 
+175301069671366656  833240755623694337 
+232572505238433794  833319759521390594 833295004730814464 833522742880264192 833200431580930048 
+232572781731123200  833512752022818816 
+240462265680289792  833406426420748291 833412399109722114 833405029713338368 
+248882168431009793  833717442480267264 
+255294883680632833  833478807524814848 833479185024811008 
+257552283850653696  833345202198867969 833429876795383808 
+258262904091058176  834178899789615107 834181596743872513 833571661035089920 833786593949257730 833847696582639617 
+260482827458592768  833769338607980546 
+266276897305026560  833539713042485248 
+266972430638137344  833333974013448193 
+276376579918135296  834195517617881089 
+</textarea>
+    
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        
+       
+        </section>
+
+      
+
+      </div><!-- /.content-wrapper -->
+
+
+
+    <meta charset="utf-8">
+    <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="js/nv.d3.min.js"></script>
+ <style>
+        text {
+            font: 12px sans-serif;
+        }
+        svg {
+            display: block;
+        }
+        html, body, #chart1, svg {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chart1" style="height:500px;">
+    <svg></svg>
+</div>
+
+<script>
+    historicalBarChart = [
+        {
+            key: "Cumulative Return",
+            values: [
+                {
+                    "label" : "63694022492946432" ,
+                    "value" : 1
+                } ,
+                {
+                    "label" : "85696171095506944" ,
+                    "value" : 1
+                } ,
+                {
+                    "label" : "107091854092279808" ,
+                    "value" : 2
+                } ,
+                {
+                    "label" : "155014799909064704" ,
+                    "value" : 3
+                } ,
+                {
+                    "label" : "833086396827045896 " ,
+                    "value" : 0
+                } ,
+                {
+                    "label" : "175301069671366656" ,
+                    "value" : 1
+                } ,
+                {
+                    "label" : "232572505238433794" ,
+                    "value" : 3
+                } ,
+                {
+                    "label" : "833200431580930048 " ,
+                    "value" : 0
+                },
+                 {
+                    "label" : "232572781731123200 " ,
+                    "value" : 0
+                },
+                 {
+                    "label" : "833200431580930048 " ,
+                    "value" : 1
+                },
+                 {
+                    "label" : "240462265680289792 " ,
+                    "value" : 3
+                },
+                 {
+                    "label" : "248882168431009793 " ,
+                    "value" : 1
+                },
+                 {
+                    "label" : "255294883680632833 " ,
+                    "value" : 2
+                },
+                 {
+                    "label" : "257552283850653696 " ,
+                    "value" : 2
+                },
+                 {
+                    "label" : "258262904091058176 " ,
+                    "value" : 3
+                },
+                 {
+                    "label" : "833786593949257730 " ,
+                    "value" : 1
+                },
+                 {
+                    "label" : "260482827458592768 " ,
+                    "value" : 1
+                },
+                 {
+                    "label" : "266276897305026560 " ,
+                    "value" : 1
+                },
+                 {
+                    "label" : "266972430638137344 " ,
+                    "value" : 1
+                },
+                 {
+                    "label" : "276376579918135296 " ,
+                    "value" : 1
+                }
+            ]
+        }
+    ];
+    nv.addGraph(function() {
+        var chart = nv.models.discreteBarChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .staggerLabels(true)
+            //.staggerLabels(historicalBarChart[0].values.length > 8)
+            .height(500)
+            .showValues(true)
+            .duration(250)
+            ;
+        d3.select('#chart1 svg')
+            .datum(historicalBarChart)
+            .call(chart);
+        nv.utils.windowResize(chart.update);
+        return chart;
+    });
+</script>
+   
+</body>
+</html>

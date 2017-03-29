@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <center>
+                  <a class="navbar-brand" href="#"> Ejericicios big data
+                       
+
+                    </a>
+                    </center>
+                  
+                    
+                </div>
+              
+
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                    <li >
+                        <a href="index.html" >Ejercicio 1 <span class="badge"></span></a>
+                    </li>
+                   
+
+                    <li class="active-link">
+                        <a href="E2.html" >Ejercicio 2 <span class="badge"></span></a>
+                    </li>
+                    <li>
+                        <a href="E3.html">Ejercicio 3<span class="badge"></span></a>
+                    </li>
+
+
+                    <li>
+                        <a href="E4.html">Ejercicio 4</a>
+                    </li>
+                    <li>
+                        <a href="E5.html">Ejercicio 5</a>
+                    </li>
+
+                    <li>
+                        <a href="E6.html">Ejercicio 6 </a>
+                    </li>
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+           <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>Big Data Project</h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+                  <hr />
+                <div class="row">
+                    <div class="col-lg-12 ">
+                     
+
+
+
+
+       <h4>Count the number of different keywords on in the message other than stop words: a, then,
+the, in , out, , which, etc.</h4>
+    
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        
+       
+        </section>
+
+      
+
+      </div><!-- /.content-wrapper -->
+
+    <meta charset="utf-8">
+    <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="js/nv.d3.min.js"></script>
+
+    <style>
+        text {
+            font: 12px sans-serif;
+        }
+        svg {
+            display: block;
+        }
+        html, body, #chart1, svg {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+
+<div id="chart1"style="height:500px;">
+    <svg></svg>
+</div>
+
+<script>
+    historicalBarChart = [
+        {
+            key: "Cumulative Return",
+            values: [
+                {
+                    "label" : "a" ,
+                    "value" : 714328
+                } ,
+                {
+                    "label" : "an" ,
+                    "value" : 121669
+                } ,
+                {
+                    "label" : "and" ,
+                    "value" : 14719
+                } ,
+                {
+                    "label" : "are" ,
+                    "value" : 2941
+                } ,
+                {
+                    "label" : "as" ,
+                    "value" : 52864
+                } ,
+                {
+                    "label" : "at" ,
+                    "value" : 91884
+                } ,
+                {
+                    "label" : "be" ,
+                    "value" : 67320
+                } ,
+                {
+                    "label" : "by" ,
+                    "value" : 8183
+                } ,
+                {
+                    "label" : "for" ,
+                    "value" : 24177
+                } ,
+                {
+                    "label" : "from" ,
+                    "value" : 5676
+                } ,
+                {
+                    "label" : "has" ,
+                    "value" : 7231
+                } ,
+                {
+                    "label" : "in" ,
+                    "value" : 161914
+                } ,
+                {
+                    "label" : "is" ,
+                    "value" : 95280
+                } ,
+                {
+                    "label" : "it" ,
+                    "value" : 63527
+                } ,
+                {
+                    "label" : "its" ,
+                    "value" : 1819
+                } ,
+                {
+                    "label" : "of" ,
+                    "value" : 32264
+                } ,
+                {
+                    "label" : "on" ,
+                    "value" : 131023
+                } ,
+                {
+                    "label" : "that" ,
+                    "value" : 12406
+                } ,
+                {
+                    "label" : "the" ,
+                    "value" : 81875
+                } ,
+                {
+                    "label" : "to" ,
+                    "value" : 71506
+                } ,
+                {
+                    "label" : "was" ,
+                    "value" : 9029
+                } ,
+                {
+                    "label" : "were" ,
+                    "value" : 1485
+                } ,
+                 {
+                    "label" : "will" ,
+                    "value" : 5688
+                } ,
+                 {
+                    "label" : "with" ,
+                    "value" : 9416
+                } 
+                
+            ]
+        }
+    ];
+    nv.addGraph(function() {
+        var chart = nv.models.discreteBarChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .staggerLabels(true)
+            //.staggerLabels(historicalBarChart[0].values.length > 8)
+              .height(500)
+            .showValues(true)
+            .duration(250)
+            ;
+        d3.select('#chart1 svg')
+            .datum(historicalBarChart)
+            .call(chart);
+        nv.utils.windowResize(chart.update);
+        return chart;
+    });
+</script>
+   
+</body>
+</html>
